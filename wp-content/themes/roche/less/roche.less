@@ -1,0 +1,108 @@
+@primary-color:   #00a295;
+@font-face { font-family: MuseoSansRounded; src: url('../fonts/MuseoSansRounded-100.otf'); }
+@font-face { font-family: MuseoSansRounded; font-weight: bold; src: url('../fonts/MuseoSansRounded-500.otf'); }
+
+
+
+/*------------------------------------*\
+    ROCHE THEME ADDITIONAL CSS
+\*------------------------------------*/
+body {
+	background: #ebebeb;
+	color: #4d4d4d;
+	font-family: MuseoSansRounded; 
+}
+p, li {
+	font-size: 16px; 
+	line-height: 1.5; 
+}
+.read-more {
+	display: block;
+}
+
+.fixed-content {
+	background:	@primary-color;
+	
+	.btn {
+		color: #fff;
+		border-color: #fff;
+		border-radius: 0;
+		margin: 0.625rem;
+		font-size: 16px;
+		
+		&:hover {
+			color: @primary-color;	
+			background: #fff;
+			opacity: .5;
+		}
+	}
+}
+.post-container {
+	margin-bottom: 30px;
+	
+	h2 {
+		color: @primary-color;
+	}
+	.post-date {
+		font-size: 15px;
+		margin: 0;
+	}	
+	.top, .middle, .bottom, .footer {
+		background: #fff;
+		padding: 30px 30px 0;
+		text-align: center;
+	}
+	.middle {
+		padding: 30px 0;
+		
+		img {
+			width: 100%;
+		}
+	}
+	.bottom {
+
+		b {
+			font-weight: normal;
+			color: @primary-color;
+		}
+
+		.read-more {
+			width: 100%;
+			background: @primary-color;
+			color: #fff;
+			text-decoration: none;
+			font-size: 16px;
+			padding: 5px;
+			margin: 25px 0;
+			
+			&:hover {
+				color: #fff;	
+				background: @primary-color;
+				opacity: .5;
+ 			}
+		}
+		.social-share {
+			border-top: 1px solid #ebebeb;
+			padding: 25px 0;
+			
+			.tags {
+				color: @primary-color;
+				font-size: 16px;
+				font-weight: bold;
+				padding-bottom: 25px;
+				
+				span {
+					padding: 10px;	
+				}
+				
+			}
+			.social-icons {
+				display: inline-block;
+				text-align: center;	
+			}
+		}
+	}
+}
+
+
+
